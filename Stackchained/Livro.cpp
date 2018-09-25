@@ -22,21 +22,25 @@ std::string Livro::getIsbn()
 
 std::string Livro::getLivro()
 {
-    //return Livro;
+    std::string p="\nTitulo = ";
+    std::string p1="\n Autor = ";
+    std::string p2="\n Isbn = ";
+
+    return p+titulo+p1+autor+p2+isbn;
 
 }
 
-void Livro::setTitulo()
+void Livro::setTitulo(std::string x)
 {
-    std::cin>>titulo;
+    titulo=x;
 }
 
-void Livro::setAutor()
+void Livro::setAutor(std::string x)
 {
-    std::cin>>autor;
+    autor=x;
 }
 
-void Livro::setIsbn()
+void Livro::setIsbn(std::string x)
 {
-    std::cin>>isbn;
+    isbn=x;
 }

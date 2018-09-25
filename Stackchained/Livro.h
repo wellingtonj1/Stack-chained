@@ -14,9 +14,9 @@ public:
     std::string getAutor();
     std::string getIsbn();
     std::string getLivro();
-    void setTitulo();
-    void setAutor();
-    void setIsbn();
+    void setTitulo(std::string);
+    void setAutor(std::string);
+    void setIsbn(std::string);
 
 };
 

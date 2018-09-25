@@ -1,8 +1,9 @@
 #include <QCoreApplication>
+#include <iostream>
+#include "Pilhatest.h"
 
-int main(int argc, char *argv[])
+int main()
 {
-    QCoreApplication a(argc, argv);
-
-    return a.exec();
+    Pilhatest p;
+    p.menu();
 }
