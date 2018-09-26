@@ -64,12 +64,12 @@ Livro* Pilhatest::criaLivro()
     aux->setTitulo(entrada);
 
     std::cout<<"\nDigite o Autor\n";
-    std::cin.ignore();
+    //std::cin.ignore();
     std::getline(std::cin,entrada);
     aux->setAutor(entrada);
 
     std::cout<<"\nDigite o Isbn\n";
-    std::cin.ignore();
+    //std::cin.ignore();
     std::getline(std::cin,entrada);
     aux->setIsbn(entrada);
 
@@ -79,7 +79,7 @@ Livro* Pilhatest::criaLivro()
 void Pilhatest::mostraPilha()
 {
     Pilha aux;
-    Livro* mostra;
+    Livro* mostra =0;
 
 
     while(!bijeto.vazia())
@@ -87,7 +87,9 @@ void Pilhatest::mostraPilha()
         mostra=bijeto.desempilha();
         std::cout<<mostra->getLivro()<<std::endl;
         aux.empilha(mostra);
+
     }
+
     while(!aux.vazia())
     {
         bijeto.empilha(aux.desempilha());
